@@ -3,6 +3,16 @@ document.querySelector('#search-btn').onclick = ()=>{
     searchform.classList.toggle('active');
 }
 
+let loginFrom =document.querySelector('.login-form-container');
+document.querySelector('#login-btn').onclick = () =>{
+    loginFrom.classList.toggle('active');
+}
+
+document.querySelector('#close-btn-login').onclick = () =>{
+    loginFrom.classList.remove('active');
+}
+
+
 document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', function () {
         if (window.scrollY > 80) {

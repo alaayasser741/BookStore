@@ -21,6 +21,7 @@
     text-transform: capitalize;
     transition: all .2s linear;
     transition: width none;
+    user-select: none;
 }
 
 html {
@@ -174,4 +175,106 @@ body {
 }
 .bottom-navbar a:hover{
     background: var(--dark-color);
+}
+/* Login Form */
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255,.9);
+    position: fixed;
+    top: 0;
+    right: -105%;
+    z-index: 1000000;
+    height: 100%;
+    width: 100%;
+}
+.login-form-container form{
+    background: #fff;
+    border: var(--border);
+    width: 40rem;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    margin: 2rem;
+    border-radius: .5;
+    -webkit-border-radius: .5;
+    -moz-border-radius: .5;
+    -ms-border-radius: .5;
+    -o-border-radius: .5;
+}
+.login-form-container.active{
+    right: 0;
+}
+.login-form-container form h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: center;
+}
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+.login-form-container form .box-input{
+    width: 100%;
+    margin: .7rem 0;
+    font-size: 1.6rem;
+    border: var(--border);
+    padding: 1rem 1.2rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    text-transform: none;
+}
+.login-form-container form .checkbox{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    cursor: pointer;
+}
+.Btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem  3rem;
+    color: #fff;
+    background: var(--green);
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.Btn:hover{
+    background: var(--dark-color);
+}
+.login-form-container form .Btn{
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+}
+.login-form-container form p{
+    padding-top: .8rem;
+    color: var(--light-color);
+    font-size: 1.5rem;
+}
+.login-form-container form p a{
+    color: var(--green);
+    
+}
+.login-form-container #close-btn-login{
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: var(--black);
+    cursor: pointer;
 }
