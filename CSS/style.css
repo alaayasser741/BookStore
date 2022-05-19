@@ -47,8 +47,13 @@ html::-webkit-scrollbar-thumb {
     -ms-border-radius: 2px;
     -o-border-radius: 2px;
 }
-html::-webkit-scrollbar-thumb:hover{
+
+html::-webkit-scrollbar-thumb:hover {
     background: #666;
+}
+
+section {
+    padding: 5rem 9%;
 }
 
 /* /////////////////////// */
@@ -99,60 +104,79 @@ header .links a:hover i {
     text-decoration: none;
 }
 
-.header2 .nav a:hover{
+.header2 .nav a:hover {
     background-color: var(--dark-color);
 }
+
 #search-btn:hover {
     color: var(--dark-color) !important;
 }
-#search-btn{
+
+#search-btn {
     display: none;
 }
+
 body {
     height: 333rem;
 }
+
 @media (max-width:991px) {
-    html{
+    html {
         font-size: 55%;
     }
+
+    section {
+        padding: 3rem 2rem;
+    }
 }
+
 @media (max-width:768px) {
-    html{
+    html {
         scroll-padding-top: 0;
     }
-    body{
+
+    body {
         padding-bottom: 6rem;
     }
-    .header .header2{
+
+    .header .header2 {
         display: none;
     }
-    .header header{
+
+    .header header {
         box-shadow: var(--box-shadow);
         position: relative;
     }
+
     .header header .search-form {
         position: absolute;
         top: -115%;
         right: 2rem;
         width: 90%;
     }
-    .header header .search-form.active{
+
+    .header header .search-form.active {
         top: 115%;
     }
-    .header header .search-form .form-control{
+
+    .header header .search-form .form-control {
         box-shadow: var(--box-shadow);
     }
-    #search-btn{
+
+    #search-btn {
         display: inline-block;
     }
+
 }
-@media (max-width:450px){
-    html{
-        font-size:50%;
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
     }
 }
+
 /* bottom navbar */
-.bottom-navbar{
+.bottom-navbar {
     text-align: center;
     background: var(--green);
     position: fixed;
@@ -162,26 +186,30 @@ body {
     z-index: 10000;
     display: none;
 }
-@media (max-width:768px){
-    .bottom-navbar{
+
+@media (max-width:768px) {
+    .bottom-navbar {
         display: block;
     }
 }
-.bottom-navbar a{
+
+.bottom-navbar a {
     text-decoration: none;
     font-size: 2.5rem;
     padding: 2rem;
     color: #fff;
 }
-.bottom-navbar a:hover{
+
+.bottom-navbar a:hover {
     background: var(--dark-color);
 }
+
 /* Login Form */
-.login-form-container{
+.login-form-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(255, 255, 255,.9);
+    background: rgba(255, 255, 255, .9);
     position: fixed;
     top: 0;
     right: -105%;
@@ -189,7 +217,8 @@ body {
     height: 100%;
     width: 100%;
 }
-.login-form-container form{
+
+.login-form-container form {
     background: #fff;
     border: var(--border);
     width: 40rem;
@@ -202,21 +231,25 @@ body {
     -ms-border-radius: .5;
     -o-border-radius: .5;
 }
-.login-form-container.active{
+
+.login-form-container.active {
     right: 0;
 }
-.login-form-container form h3{
+
+.login-form-container form h3 {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: var(--black);
     text-align: center;
 }
-.login-form-container form span{
+
+.login-form-container form span {
     display: block;
     font-size: 1.5rem;
     padding-top: 1rem;
 }
-.login-form-container form .box-input{
+
+.login-form-container form .box-input {
     width: 100%;
     margin: .7rem 0;
     font-size: 1.6rem;
@@ -229,21 +262,24 @@ body {
     -o-border-radius: .5rem;
     text-transform: none;
 }
-.login-form-container form .checkbox{
+
+.login-form-container form .checkbox {
     display: flex;
     align-items: center;
     gap: .5rem;
     padding: 1rem 0;
 }
-.login-form-container form .checkbox label{
+
+.login-form-container form .checkbox label {
     font-size: 1.5rem;
     color: var(--light-color);
     cursor: pointer;
 }
-.Btn{
+
+.Btn {
     margin-top: 1rem;
     display: inline-block;
-    padding: .9rem  3rem;
+    padding: .9rem 3rem;
     color: #fff;
     background: var(--green);
     font-size: 1.7rem;
@@ -253,28 +289,136 @@ body {
     -ms-border-radius: .5rem;
     -o-border-radius: .5rem;
 }
-.Btn:hover{
+
+.Btn:hover {
     background: var(--dark-color);
 }
-.login-form-container form .Btn{
+
+.login-form-container form .Btn {
     text-align: center;
     width: 100%;
     margin: 1.5rem 0;
 }
-.login-form-container form p{
+
+.login-form-container form p {
     padding-top: .8rem;
     color: var(--light-color);
     font-size: 1.5rem;
 }
-.login-form-container form p a{
+
+.login-form-container form p a {
     color: var(--green);
-    
+
 }
-.login-form-container #close-btn-login{
+
+.login-form-container #close-btn-login {
     position: absolute;
     top: 1.5rem;
     right: 2.5rem;
     font-size: 5rem;
     color: var(--black);
     cursor: pointer;
+}
+
+/* Book Slider */
+.home {
+    background: url(../image/banner-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .row .content {
+    flex: 1 1 42rem;
+}
+
+.home .row .books-slider {
+    flex: 1 1 42rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.home .row .books-slider a img {
+    height: 25rem;
+}
+
+.home .row .books-slider a {}
+
+.home .row .books-slider a:hover img {
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+.home .row .books-slider .stand {
+    width: 100%;
+    margin-top: -2rem;
+}
+
+.home .row .content h3 {
+    color: var(--black);
+    font-size: 4.5rem;
+}
+
+.home .row .content p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.home .row .content .Btn:hover {
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .home .row .content {
+        text-align: center;
+    }
+
+    .home .row .content h3 {
+        font-size: 3.5rem;
+    }
+}
+
+/* Icon section */
+.icon-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+.icon-container .icon{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+@media (max-width:768px){
+    .icon-container .icon{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.icon-container .icon i{
+    font-size: 3.5rem;
+    color: var(--green);
+}
+.icon-container .icon h3{
+    font-size: 2.2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+.icon-container .icon p{
+    font-size: 1.4rem;
+    color: var(--light-color);
 }

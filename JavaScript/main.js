@@ -1,14 +1,14 @@
 searchform = document.querySelector('.search-form ');
-document.querySelector('#search-btn').onclick = ()=>{
+document.querySelector('#search-btn').onclick = () => {
     searchform.classList.toggle('active');
 }
 
-let loginFrom =document.querySelector('.login-form-container');
-document.querySelector('#login-btn').onclick = () =>{
+let loginFrom = document.querySelector('.login-form-container');
+document.querySelector('#login-btn').onclick = () => {
     loginFrom.classList.toggle('active');
 }
 
-document.querySelector('#close-btn-login').onclick = () =>{
+document.querySelector('#close-btn-login').onclick = () => {
     loginFrom.classList.remove('active');
 }
 
@@ -26,4 +26,26 @@ document.addEventListener("DOMContentLoaded", function () {
             document.body.style.paddingTop = '0';
         }
     });
+});
+
+// Swiper 
+
+var swiper = new Swiper(".books-slider", {
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 9500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
 });
