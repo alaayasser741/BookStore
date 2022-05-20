@@ -77,7 +77,9 @@ section {
     background: rgb(0, 0, 0, .1);
     z-index: -1;
 }
-
+a{
+    text-decoration: none;
+}
 .heading span {
     font-size: 3rem;
     padding: .5rem 2rem;
@@ -338,7 +340,7 @@ body {
 
 .login-form-container form p a {
     color: var(--green);
-
+    text-decoration: underline;
 }
 
 .login-form-container #close-btn-login {
@@ -598,4 +600,37 @@ body {
         margin-left: 0;
         max-width: 100%;
     }
+}
+/* arrivals Section*/
+.arrivals .arrivals-slider .box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    border: var(--border);
+    margin: 1rem 0;
+}
+.arrivals .arrivals-slider .box:hover{
+    border: var(--border-hover);
+}
+.arrivals .arrivals-slider .box .image img{
+    height: 15rem;
+}
+.arrivals .arrivals-slider .box .content h3{
+    font-size: 2rem;
+    color: var(--black);
+}
+.arrivals .arrivals-slider .box .content .price{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+.arrivals .arrivals-slider .box .content .price span{
+    font-size: 1.5rem;
+    color: var(--light-color);
+    text-decoration: line-through;
+}
+.arrivals .arrivals-slider .box .content .stars i{
+    font-size: 1.5rem;
+    color: var(--green);
 }
