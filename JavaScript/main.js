@@ -27,6 +27,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+window.onload = () => {
+
+    fadeOut();
+
+}
+// loader 
+function loader() {
+    document.querySelector('.loader-container').classList.add('active');
+}
+
+function fadeOut() {
+    setTimeout(loader, 4000);
+}
 
 // Swiper 
 
@@ -103,7 +116,7 @@ var swiper = new Swiper(".arrivals-slider", {
 //reviews slider
 var swiper = new Swiper(".reviews-slider", {
     spaceBetween: 10,
-    grabCursor:true,
+    grabCursor: true,
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -126,7 +139,7 @@ var swiper = new Swiper(".reviews-slider", {
 //blogs-slider
 var swiper = new Swiper(".blogs-slider", {
     spaceBetween: 10,
-    grabCursor:true,
+    grabCursor: true,
     loop: true,
     centeredSlides: true,
     autoplay: {

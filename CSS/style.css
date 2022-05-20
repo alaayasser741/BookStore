@@ -855,3 +855,21 @@ header .links a:hover i {
     color: var(--green);
     font-weight: bold;
 }
+.loader-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-container.active{
+    display: none;
+}
+.loader-container img{
+    height:10rem;
+}
