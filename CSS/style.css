@@ -463,6 +463,7 @@ header .links a:hover i {
 /* Featured section */
 .featured .featured-slider .box {
     width: 25rem;
+    height: 45rem;
     margin: 2rem 0;
     position: relative;
     overflow: hidden;
@@ -473,6 +474,7 @@ header .links a:hover i {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    background: #eee;
 }
 
 .featured .featured-slider .box:hover {
@@ -631,6 +633,8 @@ header .links a:hover i {
     padding: 2rem 1rem;
     border: var(--border);
     margin: 1rem 0;
+    height: 20rem;
+    overflow: hidden;
 }
 
 .arrivals .arrivals-slider .box:hover {
